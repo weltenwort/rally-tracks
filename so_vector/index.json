@@ -36,6 +36,7 @@
         "dims" : 768,
         "index" : true,
         "similarity": "dot_product",
+        "element_type": "bfloat16",
         "index_options": {
           "type": {{ vector_index_type | default("bbq_hnsw") | tojson }}
         }
